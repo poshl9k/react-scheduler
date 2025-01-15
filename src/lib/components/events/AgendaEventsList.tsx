@@ -89,7 +89,7 @@ const AgendaEventsList = ({ day, events }: AgendaEventsListProps) => {
                 </Avatar>
               </ListItemAvatar>
               <ListItemText primary={event.title} secondary={`${startDate} - ${endDate}`} />
-              <ListItemText primary={event.subtitle} secondary={`${startDate} - ${endDate}`} />
+              event.subtitle ? (<ListItemText primary={event.subtitle} secondary={`${startDate} - ${endDate}`} />): null
             </ListItemButton>
           );
         })}
